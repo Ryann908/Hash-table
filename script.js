@@ -156,8 +156,8 @@ class HashMap{
           let copy = this.entries();
           this.clear();
           this.buckets.length = this.storage;
-          copy.forEach((entry) => {
-            this.set(entry[0], entry[1]);
+          copy.forEach((item) => {
+            this.set(item[0], item[1]);
           });
         }
         return;
